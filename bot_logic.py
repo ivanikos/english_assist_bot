@@ -1,4 +1,4 @@
-
+import os
 import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
@@ -8,7 +8,7 @@ import asyncio
 import openai_logic
 
 # Replace 'YOUR_BOT_TOKEN' with your bot's token
-API_TOKEN = token
+API_TOKEN = os.getenv("ENG_ASSIST_TOKEN")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

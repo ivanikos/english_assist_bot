@@ -5,10 +5,11 @@ from openai import OpenAI
 # client.api_key = "5738154551:AAF8Ru5dVHE5bpx0mjEdc6orXFNCyvY4cec"
 import os
 import httpx
-
+import os
 from openai import OpenAI
 
-# gpt = OpenAI(api_key="5738154551:AAF8Ru5dVHE5bpx0mjEdc6orXFNCyvY4cec")
+api_key = os.getenv("OPENAI_API_KEY")
+gpt = OpenAI(api_key=api_key)
 
 prep_reqs = ("I will give you a word in English and I will expect you will respond me translation"
              " on russian language. Style of response should be like this (Example should be on a new line) "
