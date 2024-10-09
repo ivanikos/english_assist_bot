@@ -12,8 +12,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 gpt = OpenAI(api_key=api_key)
 
 prep_reqs = ("I will give you a word in English and I will expect you will respond me translation"
-             " on russian language. If there will be a typo, try to fix the word and give me an answer"
-             " according to requirements. Style of response should be like this (Example should be on a new line) "
+             " on russian language. Style of response should be like this (Example should be on a new line) "
              "\"complain  (kəmˈplān) - жаловаться / сетовать. "
              "Example - My brother always complains when he has to do his homework.\" "
              "On the next line give translation of example to russian."
